@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de JavaScript</title>
+</head>
+<body>
+    <!-- Parágrafo com um ID único -->
+    <p id="meuParagrafo">Texto original do parágrafo.</p>
+    
+    <!-- Botão que chama uma função JavaScript ao ser clicado -->
+    <button onclick="alterarTexto()">Clique aqui</button>
+
+    <script>
+        // Função para alterar o texto do parágrafo
+        function alterarTexto() {
+            // Encontra o parágrafo pelo ID
+            const paragrafo = document.getElementById('meuParagrafo');
+            // Altera o texto do parágrafo
+            paragrafo.textContent = 'O texto foi alterado!';
+        }
+    </script>
+</body>
+</html>
